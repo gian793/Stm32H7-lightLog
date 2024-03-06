@@ -48,7 +48,7 @@ class mxLog : public ringBuffer<char> {
         mxLog& operator=( const mxLog& ) = delete;
         mxLog& operator=( mxLog&& ) = delete;
 
-		size_t Info( const fLog formatLog, ... );
+	size_t Info( const fLog formatLog, ... );
 
         size_t storeMsg( const fData_t* pfData, va_list args );
 
@@ -61,8 +61,6 @@ class mxLog : public ringBuffer<char> {
     private:
         UART_HandleTypeDef* pUsart;
 
-//        consteval parType_t getParameterType( const char* format );
-
         size_t putPar( const char format, const char* par );
 
         size_t getParSize( const char format, const char* par );
@@ -72,17 +70,6 @@ class mxLog : public ringBuffer<char> {
         void printOut( void );
         void printStr( const char* pStr, const char endChar );
         void printPar( const char format );
-
-
-//        static constexpr std::array<uint32_t, 8> usartBaseList = {
-//                USART1_BASE,
-//                USART2_BASE,
-//                USART3_BASE,
-//                UART4_BASE,
-//                UART5_BASE,
-//                USART6_BASE,
-//                UART7_BASE,
-//                UART8_BASE    } ;
 };
 
 #else
