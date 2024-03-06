@@ -1,5 +1,5 @@
 /**
- * \file            logForlogmat.h
+ * \file            fLog.h
  * \brief           Formatted log data for logging.
  * \author          g.marcolin
  */
