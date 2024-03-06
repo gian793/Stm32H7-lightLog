@@ -22,22 +22,6 @@
 /* c++14 constexpr function can do this in a simple way. */
 #include <iostream>
 
-//constexpr const char* file_name(const char* path) {
-//    const char* file = path;
-//    while (*path) {
-//        if (*path++ == '/') {
-//            file = path;
-//        }
-//    }
-//    return file;
-//}
-//
-//int main() {
-//    constexpr const char* file = file_name(__FILE__);
-//    std::cout << file << std::endl;
-//    return 0;
-//}
-
 /*---------------------------------------------------------------------------*/
 
 #define FILENAME    ( strrchr( __FILE__, '/' ) ? strrchr( __FILE__, '/' ) + 1 : __FILE__ )
