@@ -7,10 +7,6 @@
 #ifndef MX_LOG_H_
 #define MX_LOG_H_
 
-//#ifdef __cplusplus
-//extern "C" {
-//#endif
-
 #ifdef __cplusplus
 
 /*---------------------------------------------------------------------------*/
@@ -18,18 +14,6 @@
 #include "stm32h7xx.h"
 #include "stm32_lock.h"
 #include "ringBuffer.h"
-
-/*---------------------------------------------------------------------------*/
-
-//enum class usart {
-//    usart1,
-//    usart2,
-//    usart3,
-//    uart4,
-//    uart5,
-//    usart6,
-//    uart7,
-//    uart8  };
 
 /*---------------------------------------------------------------------------*/
 
@@ -79,10 +63,6 @@ typedef struct mxLog mxLog;
 size_t mxLogInfo( mxLog* pLog, const char* format, ... );
 
 #endif
-
-//#ifdef __cplusplus
-//}
-//#endif
 
 /*---------------------------------------------------------------------------*/
 
